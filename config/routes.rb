@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'hello#index'
+  root 'movies#index'
   get 'movies/index'
   post 'movies/search'
   get 'movies/search'
