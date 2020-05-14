@@ -1,0 +1,31 @@
+
+
+  <meta property="og:url" content="サイトのURL" /> 
+  <meta property="og:title" content="サイトのタイトル" /> 
+  <meta property="og:image" content="画像のURL" /> 
+  <meta property="og:description" content="サイトのディスクリプション" /> 
+
+  <meta name="twitter:card" content="カード種類" /> 
+  <meta name="twitter:site" content="@ユーザー名" /> 
+
+
+
+<p><strong>ニックネーム:</strong><%= @name %></p>
+
+<p><strong>＃</strong><%= @hash %></p>
+
+<%= image_tag("#{@image}", :alt => 'poster') %>
+
+<div>
+  <%= form_tag(movies_search_path, method: :get) do %>
+    <%= search_field_tag :looking_for, nil, placeholder: 'Movie Title...' %>
+    <%= submit_tag '検索' %>
+  <% end %>
+</div>
+
+
+<a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" target="_blank" href="https://twitter.com/intent/tweet?text=<%= @name %>さんの<%= @hash %>！ ;hashtags=&amp;url=https://image.tmdb.org/t/p/w200#{movie["poster_path"]}&amp;" print "#{image}"
+>
+
+
+Twitterで投稿する</a>
