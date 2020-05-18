@@ -7,6 +7,13 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <meta property="og:url" content="https://moviepresent.herokuapp.com/" /> 
+    <meta property="og:title" content="movie present" /> 
+    <meta property="og:image" content="https://image.tmdb.org/t/p/w200#{movie["poster_path"]}" /> 
+    <meta property="og:description" content="おすすめの映画をみんなに紹介しよう" /> 
+
+    <meta name="twitter:card" content="summary_large_image" /> 
   </head>
 
   <body>
