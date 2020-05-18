@@ -2,12 +2,12 @@
 <html>
 <head>
 
-  <meta property="og:url" content="https://moviepresent.herokuapp.com/" /> 
-  <meta property="og:title" content="movie present" /> 
-  <meta property="og:image" content="https://image.tmdb.org/t/p/w200#{movie["poster_path"]}" /> 
-  <meta property="og:description" content="おすすめの映画をみんなに紹介しよう" /> 
+  # <meta property="og:url" content="https://moviepresent.herokuapp.com/" /> 
+  # <meta property="og:title" content="movie present" /> 
+  # <meta property="og:image" content="https://image.tmdb.org/t/p/w200#{movie["poster_path"]}" /> 
+  # <meta property="og:description" content="おすすめの映画をみんなに紹介しよう" /> 
 
-  <meta name="twitter:card" content="summary_large_image" /> 
+  # <meta name="twitter:card" content="summary_large_image" /> 
   </head>
 
 <p><strong>ニックネーム:</strong><%= @name %></p>
@@ -24,7 +24,7 @@
 </div>
 
 
-<a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" target="_blank" href="https://twitter.com/intent/tweet?text=<%= @name %>さんの<%= @hash %>！ ;hashtags=&amp;url=https://image.tmdb.org/t/p/w200#{movie["poster_path"]}&amp;" print "#{image}"
+<a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" target="_blank" href="https://twitter.com/intent/tweet?text=<%= @name %>さんの<%= @hash %>！ ;hashtags=&amp;url=https://image.tmdb.org/t/p/w200#{movie["poster_path"]}&amp;
 >
 
 
