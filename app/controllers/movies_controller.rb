@@ -19,6 +19,7 @@ class MoviesController < ApplicationController
   def new
     # 1.POSTで渡ってきた値を受け取る
     @image = params[:image]
+    print @image
     # @image_url = $_POST
     
     # 2.セッションからインデックスで入れたニックネームを抜き取る
