@@ -1,4 +1,4 @@
-
+<%= stylesheet_link_tag 'new', :media => "all" %>
 
 <p><strong>ニックネーム:</strong><%= @name %></p>
 
@@ -14,7 +14,11 @@
 </div>
 
 
-<a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" target="_blank" href="https://twitter.com/intent/tweet?text=<%= @name %>さんの<%= @hash %>！ ;hashtags=&amp;url=https://moviepresent.herokuapp.com/&amp;"
+<a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" target="_blank" href="https://twitter.com/intent/tweet?
+
+text=<%= @name %>さんの<%= @hash %>！<%= @image %>;
+hashtags=&amp;
+url=https://moviepresent.herokuapp.com/&amp;"
 >
 
 

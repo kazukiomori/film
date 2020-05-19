@@ -1,3 +1,7 @@
+<%= stylesheet_link_tag 'index', :media => "all" %>
+<h1>step 1</h1>
+
+<h2>あなたのオススメしたい映画を選ぼう！</h2>
 <div>
 <%= form_tag(movies_search_path, method: :post) do %>
   <%= search_field_tag :looking_for, nil, placeholder: '映画のタイトルを記入してね' %>
@@ -9,5 +13,6 @@
   <% end %>
 </div>
 
+<h3>ログインや新規登録の必要はありません</h3>
 
 
