@@ -19,7 +19,9 @@
 
 <p><strong>ストーリ：</strong><%= @movie_info['overview'] %></p>
 
+<div class="image">
 <%= image_tag("https://image.tmdb.org/t/p/original#{@movie_info['poster_path']}", :alt => 'poster') %>
+</div>
 
 <form method="post" action="/movies/new">
 <input name="name" placeholder="ニックネーム">
