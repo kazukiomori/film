@@ -23,35 +23,34 @@
     height: 71px;
     left: 0px;
     top: 0px;
-    margin-bottom:100px;
+    margin-bottom :20px;
 
     background: #0F0606;
   }
 
  header h1 {
-    position: absolute;
-width: 243px;
+width: 500px;
 height: 71px;
 left: 0px;
 top: 0px;
 
+float:left;
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 36px;
 line-height: 42px;
-display: flex;
-align-items: center;
+
 
 color: #FFFFFF;
 
   }
 
  header h2 {
-    position: absolute;
+float:left;
 width: 209px;
 height: 71px;
-left: 9px;
+left: 200px;
 top: 0px;
 
 font-family: Roboto;
@@ -59,7 +58,6 @@ font-style: normal;
 font-weight: normal;
 font-size: 12px;
 line-height: 14px;
-display: flex;
 align-items: center;
 
 color: #FFFFFF;
